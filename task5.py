@@ -27,6 +27,9 @@ If there are multiple students, order their names alphabetically and print each 
 if __name__ == '__main__':
     mylist = []
     scores = []
+    n = int(input())
+    while n < 2 or n > 5:
+        n = int(input())
     for _ in range(int(input())):
         name = input()
         score = float(input())
