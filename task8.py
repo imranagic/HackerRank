@@ -28,19 +28,20 @@ if __name__ == '__main__':
     N = int(input())
     myl = []
     for _ in range(N):
-        command = input().split()
-        if command[0].lower() == 'insert':
+        commands = input().split()
+        command_name = commands[0].lower()
+        if command_name == 'insert':
             myl.insert(int(command[1]), int(command[2]))
-        if command[0].lower() == 'print':
+        elif command_name == 'print':
             print(myl)
-        if command[0].lower() == 'remove':
+        elif command_name == 'remove':
             myl.remove(int(command[1]))
-        if command[0].lower() == 'append':
+        elif command_name == 'append':
             myl.append(int(command[1]))
-        if command[0].lower() == 'sort':
+        elif command_name == 'sort':
             myl.sort()
-        if command[0].lower() == 'pop':
+        elif command_name == 'pop':
             myl.pop()
-        if command[0].lower() == 'reverse':
+        elif command_name == 'reverse':
             myl = myl[::-1]
         
