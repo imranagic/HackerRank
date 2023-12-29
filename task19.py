@@ -36,11 +36,13 @@ n = int(input())
 d = deque()
 for _ in range(n):
     opt = input().split()
-    if len(opt)>1:
-        getattr(d,opt[0])(opt[1])
+    if hasattr(d, opt[0]):
+        if len(opt)>1:
+            getattr(d,opt[0])(opt[1])
+        else:
+            getattr(d,opt[0])()
     else:
-        getattr(d,opt[0])()
-
+        print("Wrong attribute")
 
     """
     operation = opt[0]
