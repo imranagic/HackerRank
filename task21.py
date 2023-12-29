@@ -49,10 +49,13 @@ lg = int(input())
 
 for _ in range(lg):
     opt = input().split()
-    if len(opt)>1:
-        getattr(s,opt[0])(int(opt[1]))
+    if hasattr(s, opt[0])
+        if len(opt)>1:
+            getattr(s,opt[0])(int(opt[1]))
+        else:
+            getattr(s,opt[0])()
     else:
-        getattr(s,opt[0])()
+        print("Wrong attribute")
 print(sum(s))
 
 
