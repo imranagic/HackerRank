@@ -49,7 +49,7 @@ lg = int(input())
 
 for _ in range(lg):
     opt = input().split()
-    if hasattr(s, opt[0])
+    if hasattr(s, opt[0]):
         if len(opt)>1:
             getattr(s,opt[0])(int(opt[1]))
         else:
