@@ -52,3 +52,6 @@ for i in range(len(s)):
         d[str(s[i])] = 1
 
 [print(key) for key in d if d[key]==1]
+
+#from collections import Counter
+#[print(key) for key,value in Counter(s).items() if value == 1]
