@@ -38,3 +38,15 @@ Sample Output
 8
 
 """
+
+k = int(input())
+
+s = list(map(int, input().split()))
+
+d = {}
+
+for i in range(len(s)):
+    if str(s[i]) in d:
+        d[str(s[i])] += 1
+    else:
+        d[str(s[i])] = 1
