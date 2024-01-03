@@ -60,5 +60,4 @@ for letter in s:
 
 sd = sorted(d.items(),key=lambda x: (-x[1],x[0]))
 
-for i in range(3):
-    print(sd[i][0],"",sd[i][1])
+[print(sd[i][0],"",sd[i][1]) for i in range(3)]
