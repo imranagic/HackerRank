@@ -15,4 +15,4 @@ for i in l:
         hap -= 1
 print(hap)
 
-
+#print(sum([(i in a) - (i in b) for i in l])) #one line solution
